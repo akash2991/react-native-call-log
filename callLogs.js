@@ -30,6 +30,22 @@ class CallLogs {
   static async loadAll() {
     return NativeCallLogs.loadAll();
   }
+
+  static async getLastRowId() {
+    return NativeCallLogs.getLastRowId()
+  }
+
+  static async getActiveSimCount() {
+    return NativeCallLogs.getActiveSimCount()
+  }
+
+  static async getTotalDurationOfTheDay(timestamp, callType) {
+    return NativeCallLogs.getTotalDurationOfTheDay(String(timestamp), callType)
+  }
+
+  static async getTotalDurationDayWise(startDate, endDate, callType) {
+    return NativeCallLogs.getTotalDurationDayWise(startDate, endDate, callType)
+  }
 }
 
 module.exports = CallLogs;

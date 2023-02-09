@@ -27,9 +27,21 @@ declare namespace CallLogs {
     rawType: number;
   }
 
+  export interface DayWiseDuration {
+    [date: string]: string;
+  }
+
   const load: (limit: number, filter?: CallFilter) => Promise<CallLog[]>;
 
   const loadAll: () => Promise<CallLog[]>;
+
+  const getLastRowId: () => Promise<number>;
+
+  const getActiveSimCount: () => Promise<number>;
+
+  const getTotalDurationOfTheDay: (timestamp: number, callType: CallType) => Promise<number>;
+
+  const getTotalDurationDayWise: (startDate: string, endDate: string, callType: CallType) => Promise<DayWiseDuration>;
 }
 
 export = CallLogs;

@@ -1,8 +1,9 @@
 # call log package for android in react-native
 
+It is a work in progress
 
 ## Installation:
-Run `yarn add react-native-call-log`
+Run `yarn add react-native-call-log-advanced`
 
 
 ### Android
