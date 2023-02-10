@@ -1,26 +1,34 @@
 package com.wscodelabs.callLogs;
 
+// import android.content.SharedPreferences;
+// import android.content.pm.PackageManager;
+import android.net.Uri;
+// import android.os.Bundle;
 import android.provider.CallLog.Calls;
 import android.database.Cursor;
 import android.content.Context;
+// import android.provider.ContactsContract;
 // import android.provider.Telephony;
 // import android.telecom.PhoneAccount;
 // import android.telecom.PhoneAccountHandle;
 // import android.telecom.TelecomManager;
-// import android.telephony.SubscriptionManager;
+import android.telephony.SubscriptionManager;
 // import android.telephony.SubscriptionInfo;
 // import android.telephony.TelephonyManager;
 
-// import android.util.Log;
+import android.util.Log;
 
+// import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+// import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+// import java.util.Map;
 import java.util.Set;
 
 import com.facebook.react.bridge.Promise;
