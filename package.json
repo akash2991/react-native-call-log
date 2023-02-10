@@ -1,6 +1,6 @@
 {
   "name": "react-native-call-log-advanced",
-  "version": "3.2.3",
+  "version": "3.3.3",
   "description": "fetch call log",
   "main": "index.js",
   "types": "index.d.ts",
